@@ -5,5 +5,11 @@ import {useDispatch,useSelector} from "react-redux";
 import { setMessages } from '../redux/messageSlice';
 import { BASE_URL } from '..';
 
+const SendInput = () => {
+    
+    
 
+    
+    
+}
 
