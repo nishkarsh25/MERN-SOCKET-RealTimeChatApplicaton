@@ -23,4 +23,4 @@ const userSlice = createSlice({
         }
     }
 });
-
+export const {setAuthUser,setOtherUsers,setSelectedUser,setOnlineUsers} = userSlice.actions;
