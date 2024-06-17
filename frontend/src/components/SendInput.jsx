@@ -6,7 +6,8 @@ import { setMessages } from '../redux/messageSlice';
 import { BASE_URL } from '..';
 
 const SendInput = () => {
-    
+    const [message, setMessage] = useState("");
+    const dispatch = useDispatch();
     
 
     
