@@ -29,7 +29,15 @@ const Sidebar = () => {
             console.log(error);
         }
     }
-    
+    const searchSubmitHandler = (e) => {
+        e.preventDefault();
+        const conversationUser = otherUsers?.find((user)=> user.fullName.toLowerCase().includes(search.toLowerCase()));
+        if(conversationUser){
+            dispatch(setOtherUsers([conversationUser]));
+        }else{
+            toast.error("User not found!");
+        }
+    }
     
 }
 
