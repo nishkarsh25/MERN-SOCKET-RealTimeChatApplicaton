@@ -44,3 +44,4 @@ const SendInput = () => {
     )
 }
 
+export default SendInput
