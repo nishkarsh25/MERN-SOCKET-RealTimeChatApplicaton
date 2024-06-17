@@ -19,7 +19,11 @@ import {
     storage,
   }
 
-  
+  const rootReducer = combineReducers({
+    user:userReducer,
+    message:messageReducer,
+    socket:socketReducer
+ })
 
 
 
