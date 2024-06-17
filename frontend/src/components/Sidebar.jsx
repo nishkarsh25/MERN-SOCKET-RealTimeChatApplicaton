@@ -12,7 +12,9 @@ import { BASE_URL } from '..';
 const Sidebar = () => {
     const [search, setSearch] = useState("");
     const {otherUsers} = useSelector(store=>store.user);
-    
+    const dispatch = useDispatch();
+
+    const navigate = useNavigate();
 
     
     
