@@ -31,7 +31,27 @@ function App() {
   const {socket} = useSelector(store=>store.socket);
   const dispatch = useDispatch();
 
-  
+  useEffect(()=>{
+    if(authUser){
+      const socketio = io(`${BASE_URL}`, {
+          query:{
+            userId:authUser._id
+          }
+      });
+      dispatch(setSocket(socketio));
+
+      socketio?.on('getOnlineUsers', (onlineUsers)=>{
+        dispatch(setOnlineUsers(onlineUsers))
+      });
+      return () => socketio.close();
+    }else{
+      if(socket){
+        socket.close();
+        dispatch(setSocket(null));
+      }
+    }
+
+  },[authUser]);
 
   
 }
