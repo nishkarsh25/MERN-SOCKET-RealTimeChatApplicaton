@@ -6,7 +6,13 @@ import { BASE_URL } from '..';
 
 
 const Signup = () => {
-  
+  const [user, setUser] = useState({
+    fullName: "",
+    username: "",
+    password: "",
+    confirmPassword: "",
+    gender: "",
+  });
   
   
   
