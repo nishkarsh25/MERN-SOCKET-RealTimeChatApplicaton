@@ -8,7 +8,8 @@ import { BASE_URL } from '..';
 const SendInput = () => {
     const [message, setMessage] = useState("");
     const dispatch = useDispatch();
-    
+    const {selectedUser} = useSelector(store=>store.user);
+    const {messages} = useSelector(store=>store.message);
 
     
     
