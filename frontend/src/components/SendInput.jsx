@@ -11,7 +11,21 @@ const SendInput = () => {
     const {selectedUser} = useSelector(store=>store.user);
     const {messages} = useSelector(store=>store.message);
 
-    
+    const onSubmitHandler = async (e) => {
+        e.preventDefault();
+        try {
+            const res = await axios.post(`${BASE_URL}/api/v1/message/send/${selectedUser?._id}`, {message}, {
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                withCredentials:true
+            });
+            dispatch(setMessages([...messages, res?.data?.newMessage]))
+        } catch (error) {
+            console.log(error);
+        } 
+        setMessage("");
+    }
     
 }
 
