@@ -14,7 +14,9 @@ const Signup = () => {
     gender: "",
   });
   const navigate = useNavigate();
-  
+  const handleCheckbox = (gender) => {
+    setUser({ ...user, gender });
+  }
   
   
 }
