@@ -5,6 +5,8 @@ import { setMessages } from '../redux/messageSlice';
 import { BASE_URL } from '..';
 
 const useGetMessages = () => {
+    const {selectedUser} = useSelector(store=>store.user);
+    const dispatch = useDispatch();
     
 }
 
