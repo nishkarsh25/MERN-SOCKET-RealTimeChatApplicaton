@@ -4,4 +4,9 @@ import useGetOtherUsers from '../hooks/useGetOtherUsers';
 import {useSelector} from "react-redux";
 
 
+const OtherUsers = () => {
+    
+     
+    
+}
 
