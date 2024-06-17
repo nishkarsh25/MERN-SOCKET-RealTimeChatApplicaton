@@ -4,5 +4,9 @@ import useGetMessages from '../hooks/useGetMessages';
 import { useSelector } from "react-redux";
 import useGetRealTimeMessage from '../hooks/useGetRealTimeMessage';
 
-
+const Messages = () => {
+    
+    
+    
+}
 
