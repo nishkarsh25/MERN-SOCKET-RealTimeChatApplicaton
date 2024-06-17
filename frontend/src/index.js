@@ -10,6 +10,6 @@ import { persistStore } from 'redux-persist';
 
 let persistor = persistStore(store);
 
-
+export const BASE_URL="http://localhost:8080"
 
 
