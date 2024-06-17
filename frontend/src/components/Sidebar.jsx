@@ -10,7 +10,8 @@ import { setMessages } from '../redux/messageSlice';
 import { BASE_URL } from '..';
  
 const Sidebar = () => {
-    
+    const [search, setSearch] = useState("");
+    const {otherUsers} = useSelector(store=>store.user);
     
 
     
