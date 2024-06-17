@@ -4,5 +4,7 @@ import {useSelector,useDispatch} from "react-redux";
 import { setMessages } from '../redux/messageSlice';
 import { BASE_URL } from '..';
 
-
+const useGetMessages = () => {
+    
+}
 
