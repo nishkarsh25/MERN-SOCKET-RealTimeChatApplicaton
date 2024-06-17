@@ -20,4 +20,3 @@ const useGetMessages = () => {
         fetchMessages();
     }, [selectedUser?._id,setMessages]);
 }
-
