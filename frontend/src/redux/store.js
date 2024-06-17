@@ -25,6 +25,7 @@ import {
     socket:socketReducer
  })
 
+const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 
 
