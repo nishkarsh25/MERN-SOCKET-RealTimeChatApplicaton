@@ -64,7 +64,7 @@ my-web-app/
 
 ## GIF's
 
-<img src="https://github.com/nishkarsh25/MERN-SOCKET-RealTimeChatApplication/blob/main/Screenshots/ss1.gif" alt="Screenshot 1" width="1000"> 
+<img src="https://github.com/nishkarsh25/MERN-SOCKET-RealTimeChatApplicaton/blob/main/Screenshots/ss1.gif" alt="Screenshot 1" width="1000"> 
 
 ## Technologies Used
 
