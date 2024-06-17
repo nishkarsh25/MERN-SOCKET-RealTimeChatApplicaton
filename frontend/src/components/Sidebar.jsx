@@ -16,7 +16,19 @@ const Sidebar = () => {
 
     const navigate = useNavigate();
 
-    
+    const logoutHandler = async () => {
+        try {
+            const res = await axios.get(`${BASE_URL}/api/v1/user/logout`);
+            navigate("/login");
+            toast.success(res.data.message);
+            dispatch(setAuthUser(null));
+            dispatch(setMessages(null));
+            dispatch(setOtherUsers(null));
+            dispatch(setSelectedUser(null));
+        } catch (error) {
+            console.log(error);
+        }
+    }
     
     
 }
