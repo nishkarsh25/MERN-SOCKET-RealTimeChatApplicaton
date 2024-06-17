@@ -7,7 +7,10 @@ import { setAuthUser } from '../redux/userSlice';
 import { BASE_URL } from '..';
 
 const Login = () => {
-  
+  const [user, setUser] = useState({
+    username: "",
+    password: "",
+  });
   
 
   
