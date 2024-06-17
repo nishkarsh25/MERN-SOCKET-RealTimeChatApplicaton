@@ -5,4 +5,10 @@ import toast from "react-hot-toast";
 import { BASE_URL } from '..';
 
 
+const Signup = () => {
+  
+  
+  
+  
+}
 
