@@ -10,7 +10,21 @@ import { setSocket } from './redux/socketSlice';
 import { setOnlineUsers } from './redux/userSlice';
 import { BASE_URL } from '.';
 
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element:<HomePage/>
+  },
+  {
+    path:"/signup",
+    element:<Signup/>
+  },
+  {
+    path:"/login",
+    element:<Login/>
+  },
 
+])
 
 
 
