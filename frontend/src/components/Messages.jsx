@@ -7,7 +7,7 @@ import useGetRealTimeMessage from '../hooks/useGetRealTimeMessage';
 const Messages = () => {
     useGetMessages();
     useGetRealTimeMessage();
-    
+    const { messages } = useSelector(store => store.message);
     
 }
 
