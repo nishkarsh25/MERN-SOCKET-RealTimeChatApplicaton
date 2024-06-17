@@ -13,6 +13,7 @@ const Signup = () => {
     confirmPassword: "",
     gender: "",
   });
+  const navigate = useNavigate();
   
   
   
