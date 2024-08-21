@@ -19,7 +19,7 @@ This project is a real-time chat application built with React, Redux, and Socket
 
 ## Live Demo
 
-You can try out the live demo of the app [here](https://mern-redux-socket-socialmediaapp-2.onrender.com/).
+You can try out the live demo of the app [here](https://mern-socket-realtimechatapplicaton-2.onrender.com).
 
 ## Folder Structure
 
